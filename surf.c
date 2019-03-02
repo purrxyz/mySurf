@@ -559,7 +559,7 @@ loaduri(Client *c, const Arg *a)
 				url = g_strdup_printf("file://%s", path);
 				free(path);
 			} else if (*uri == ' ') {
-				url = g_strdup_printf("%s%s", "https://duckduckgo.org/?q=", uri + 1);
+				url = g_strdup_printf("%s%s", searchengine, uri + 1);
 			} else {
 				url = g_strdup_printf("http://%s", uri);
 			}
